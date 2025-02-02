@@ -1,4 +1,4 @@
 ---
 title: People
-weight: 3
+weight: 6
 ---
