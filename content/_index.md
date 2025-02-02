@@ -1,8 +1,8 @@
 ---
 title: Simon[~]$whoami
-description: So, you found me. Welcome to my blog. I am a full-time software engineer at OPC IT Pty Limited, where I work as a web developer. I also tutor at the Australian National University and volunteer at Medical Pantry. In this blog, I write about the lessons I learn during my professional journey and my interests, particularly in photography. You can also find me via the following...
+description: So, you found me. Welcome to my photo gallery, though I am no professional photographer, I enjoy figuring out arbitary things about photography, as well as taking shots of random stuff so I can recell the good memories as I grow older. You can also find me via the following...
 resources:
-  - src: martin-martz-wRuhOOaG-Z4-unsplash.jpg
+  - src: ./static/favicon.ico
     params:
       cover: true # cover of the home page is used for OpenGraph cards, etc.
 menus:
