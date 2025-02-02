@@ -1,3 +1,4 @@
+baseURL = "https://photo.simon-hu.org/"
 copyright = "© Suowei Hu"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
