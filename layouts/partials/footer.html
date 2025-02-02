@@ -1,0 +1,23 @@
+<footer class="footer">
+    {{ partialCached "social-icons.html" . }}
+    <section>
+        <!-- {{ .Site.Copyright }} -->
+        {{ range .Site.Menus.footer }}
+        <!-- <a {{ with .Params.rel -}}rel="{{ . }}" {{ end -}} href="{{ .URL }}">{{ .Name }}</a> -->
+        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+        {{- print " · "}}
+        {{ end }}
+
+        {{- with site.Params.footer.text }}
+        {{ . | markdownify }}
+        {{- print " · "}}
+        {{- end }}
+
+        <span>
+            Powered by
+            <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+            <a href="https://github.com/nicokaiser/hugo-theme-gallery.git" rel="noopener"
+                target="_blank">Photo-Gallery-Theme</a> by <a href="https://discourse.gohugo.io/u/nicokaiser">Nico Kaiser</a>
+        </span>
+    </section>
+</footer>
