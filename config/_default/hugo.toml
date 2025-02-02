@@ -6,6 +6,7 @@ languageCode = "en"
 timeZone = "Australia/Canberra"
 timeout = "120s"
 title = "Simon's Photo Gallery"
+theme = "gallery"
 
 [params]
   defaultTheme = "light"
@@ -50,9 +51,6 @@ title = "Simon's Photo Gallery"
 
 [menu]
   [[menu.footer]]
-    name = "Powered by Hugo & HugoGalleryTheme by Nico Kaiser"
-    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
-    weight = 3
 
 [services]
   [services.rss]
