@@ -12,6 +12,11 @@ theme = "gallery"
   defaultTheme = "light"
   title = "Simon's Photo Gallery"
   description = "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following...."
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
   [params.author]
     email = "suowei.h@gmail.com"
     name = "Suowei (Simon) Hu"
