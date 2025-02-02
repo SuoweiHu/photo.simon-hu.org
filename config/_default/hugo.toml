@@ -6,13 +6,13 @@ enableRobotsTXT = true
 languageCode = "en"
 timeZone = "Australia/Canberra"
 timeout = "120s"
-title = "Simon's Photo Gallery"
+title = "Simon's Photo"
 theme = "gallery"
 
 [params]
   defaultTheme = "light"
-  title = "Simon's Photo Gallery"
-  description = "Simon's Photo Gallery"
+  title = "Simon's Photo"
+  description = "Simon's Photo"
   [params.assets]
     favicon = "/favicon.ico"
     favicon16x16 = "/favicon-16x16.png"
