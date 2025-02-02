@@ -76,6 +76,15 @@ body > footer a{
 body > footer section:last-of-type{
     gap: 0.25rem;
 }
+header ul#menu{
+    padding-right: 1.0rem;
+}
+header ul#menu li{
+    margin-right: 1.0rem;
+}
+header ul#menu li a{
+    font-size: 16px;
+}
 
 
 /* ====================================== */
