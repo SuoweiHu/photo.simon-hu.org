@@ -1,6 +1,6 @@
 ---
-date: 2023-01-11
-title: "Collection 2023-1"
+date: 2024-08-11
+title: "Collection 2024-08 (02)"
 resources:
   - src: "collection_2_12.jpg"
     params:

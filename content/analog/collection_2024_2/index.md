@@ -1,5 +1,5 @@
 ---
-title: "Collection 2024-2"
+title: "Collection 2024-10"
 date: 2023-10-01
 ---
 
