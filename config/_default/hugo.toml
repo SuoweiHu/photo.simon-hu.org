@@ -21,15 +21,9 @@ theme = "gallery"
     email = "suowei.h@gmail.com"
     name = "Suowei (Simon) Hu"
   [params.socialIcons]
-    facebook = "https://www.facebook.com/"
-    instagram = "https://www.instagram.com/"
-    github = "https://github.com/nicokaiser/hugo-theme-gallery/"
-    youtube = "https://www.youtube.com/"
-    email = "mailto:user@example.com"
-    #website = "https://example.com"
-    #mastodon = "https://example.com"
-    #pixelfed = "https://example.com"
-    #mixcloud = "https://mixcloud.com"
+    linkedin = "https://www.linkedin.com/in/suowei-hu-0249b0181/"
+    github = "https://github.com/SuoweiHu"
+    email = "mailto:suowei.h@gmail.com"
   [params.gallery]
     #boxSpacing = 10
     #targetRowHeight = 288

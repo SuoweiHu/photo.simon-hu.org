@@ -124,3 +124,11 @@ html.dark {
     --text-2: var(--text-2-light);
     --border: var(--border-light)
 }
+
+/* ====================================== */
+/* Linkedin icon style */
+a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
+    height: 22px;
+    width:  22px;
+    transform: translate(0px, 1px);
+}
