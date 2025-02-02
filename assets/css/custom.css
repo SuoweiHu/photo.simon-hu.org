@@ -77,8 +77,9 @@ body>footer section:last-of-type{
     gap: 0.25rem;
 }
 
+
 /* ====================================== */
-/* Home Page top section */
+/* Home Page top section (hgroup) */
 main > hgroup{
     max-width: 1232px;
     margin-left: auto;
@@ -90,6 +91,11 @@ main > hgroup{
 main > hgroup > *{
     text-align: left;
     flex-grow: 1;
+}
+main > hgroup section.social-icons{
+    margin-top: 0rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 /* ====================================== */
