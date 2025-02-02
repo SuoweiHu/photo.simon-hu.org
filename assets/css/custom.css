@@ -177,3 +177,8 @@ a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
     }
 }
 
+/* ====================================== */
+/* Hide social icons on home page */
+html:not(.front-page) section.social-icons{
+    display: none;
+}
