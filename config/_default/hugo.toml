@@ -1,19 +1,19 @@
-copyright = "© Your Name"
+copyright = "© Suowei Hu"
 defaultContentLanguage = "en"
 disableKinds = ["taxonomy"]
 enableRobotsTXT = true
 languageCode = "en"
-timeZone = "Europe/Berlin"
+timeZone = "Australia/Canberra"
 timeout = "120s"
-title = "Gallery"
+title = "Simon's Photo Gallery"
 
 [params]
-  defaultTheme = "dark"
-  description = "Example site for hugo-theme-gallery"
-  title = "My Gallery"
+  defaultTheme = "light"
+  title = "Simon's Photo Gallery"
+  description = "So, you found me. Welcome to my blog. I am a software engineer who works at OPC IT Pty Limited. I am responsible for the daily maintenance and development of Drupal websites at my workplace, and in this blog I write about programming, technology, and other things that I learn during my professional journey. You can find me via the following...."
   [params.author]
-    email = "user@example.com"
-    name = "Your Name"
+    email = "suowei.h@gmail.com"
+    name = "Suowei (Simon) Hu"
   [params.socialIcons]
     facebook = "https://www.facebook.com/"
     instagram = "https://www.instagram.com/"
@@ -50,7 +50,7 @@ title = "Gallery"
 
 [menu]
   [[menu.footer]]
-    name = "GitHub"
+    name = "Powered by Hugo & HugoGalleryTheme by Nico Kaiser"
     url = "https://github.com/nicokaiser/hugo-theme-gallery/"
     weight = 3
 
