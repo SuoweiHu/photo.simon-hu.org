@@ -132,3 +132,12 @@ a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
     width:  22px;
     transform: translate(0px, 1px);
 }
+
+/* ====================================== */
+/* Home page featured image */
+@media(min-width: 640px){
+    .featured-card{
+        height: 450px;
+        aspect-ratio: unset;
+    }
+}
