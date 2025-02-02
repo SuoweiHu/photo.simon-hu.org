@@ -64,16 +64,16 @@ header > a:first-of-type{
     margin-left: 0rem;
     padding-left: 0.5rem;
 }
-footer{
+body > footer{
     font-size: 12px;
 }
-footer a{
+body > footer a{
     text-decoration: underline;
     &:hover{
         text-decoration: none;
     }
 }
-body>footer section:last-of-type{
+body > footer section:last-of-type{
     gap: 0.25rem;
 }
 
