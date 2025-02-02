@@ -80,10 +80,13 @@ header ul#menu{
     padding-right: 1.0rem;
 }
 header ul#menu li{
-    margin-right: 1.0rem;
+    margin-right: 1.5rem;
 }
 header ul#menu li a{
     font-size: 16px;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 
