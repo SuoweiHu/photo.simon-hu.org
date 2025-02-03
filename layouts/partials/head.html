@@ -34,4 +34,13 @@
   {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" true "params" $params) | resources.Fingerprint }}
   <script src="{{ $js.RelPermalink }}" defer></script>
   {{- partial "head-custom.html" . -}}
+
+  <!-- Google Analytics Tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMBX1ZN6HE"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KMBX1ZN6HE');
+  </script>
 </head>
