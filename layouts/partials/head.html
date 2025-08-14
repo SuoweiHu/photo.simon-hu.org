@@ -20,6 +20,8 @@
   {{ partial "opengraph.html" . }}
   {{ $css := resources.Get "/css/main.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+  {{ $tw := resources.Get "/css/tailwind.css" | postCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $tw.RelPermalink }}" />
   {{ $params := dict
     "closeTitle" (i18n "closeTitle")
     "zoomTitle" (i18n "zoomTitle")

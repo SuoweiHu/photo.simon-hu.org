@@ -1,12 +1,12 @@
-<header>
+<header class="max-w-[var(--header-max-width)] mx-auto mb-[calc(2rem-1px)]">
   {{ with .Parent }}
-    <a class="btn btn-square" href="{{ .RelPermalink | default .Site.Home.RelPermalink }}" title="{{ .Title }}">
+    <a class="btn btn-square ml-0 pl-[var(--header-padding-left)]" href="{{ .RelPermalink | default .Site.Home.RelPermalink }}" title="{{ .Title }}">
       <svg width="24" height="24" data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path clip-rule="evenodd" fill-rule="evenodd" d="M11.03 3.97a.75.75 0 0 1 0 1.06l-6.22 6.22H21a.75.75 0 0 1 0 1.5H4.81l6.22 6.22a.75.75 0 1 1-1.06 1.06l-7.5-7.5a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 0 1 1.06 0Z"></path>
       </svg>
     </a>
   {{ else }}
-    <a class="btn" href="{{ .Site.Home.RelPermalink }}">
+    <a class="btn ml-0 pl-[var(--header-padding-left)]" href="{{ .Site.Home.RelPermalink }}">
       {{ .Site.Title }}
     </a>
   {{ end }}
@@ -24,12 +24,12 @@
       </li>
     </ul>
   {{ end }}
-  <ul id="menu">
-    <li><a href="/featured" title="Featured"><span>Featured</span></a></li>
-    <li><a href="/travelogue" title="Featured"><span>Travelogue</span></a></li>
-    <li><a href="/event" title="Featured"><span>Event</span></a></li>
-    <li><a href="/analog" title="Featured"><span>Analog</span></a></li>
-    <li><a href="https://blog.simon-hu.org/" title="Blog"><span>Blog</span></a></li>
+  <ul id="menu" class="pr-[var(--header-menu-right)]">
+    <li class="mr-[var(--header-menu-item-right)]"><a class="text-[16px] hover:underline" href="/featured" title="Featured"><span>Featured</span></a></li>
+    <li class="mr-[var(--header-menu-item-right)]"><a class="text-[16px] hover:underline" href="/travelogue" title="Featured"><span>Travelogue</span></a></li>
+    <li class="mr-[var(--header-menu-item-right)]"><a class="text-[16px] hover:underline" href="/event" title="Featured"><span>Event</span></a></li>
+    <li class="mr-[var(--header-menu-item-right)]"><a class="text-[16px] hover:underline" href="/analog" title="Featured"><span>Analog</span></a></li>
+    <li class="mr-[var(--header-menu-item-right)]"><a class="text-[16px] hover:underline bg-[var(--blog-bg)] py-[5px] px-[10px] -translate-y-[5px] rounded-[10px] text-white transition-all duration-150 ease-in-out hover:bg-[var(--blog-hover-bg)] hover:text-[var(--blog-hover-text)] hover:no-underline" href="https://blog.simon-hu.org/" title="Blog"><span>Blog</span></a></li>
   </ul>
 </header>
 {{ partial "menu.html" . }}

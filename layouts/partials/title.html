@@ -1,10 +1,10 @@
 {{ if .Title }}
-  <hgroup>
-    <h1>
+  <hgroup class="max-w-[var(--hgroup-max-width)] mx-auto px-[0.5rem] p-[var(--hgroup-padding)] gap-0 items-start">
+    <h1 class="text-left grow">
         <code>{{ .Title }}</code>
     </h1>
     {{ with .Params.Description }}
-      <p>{{ . | markdownify }}</p>
+      <p class="text-left grow my-[14px] pt-[0.3rem]">{{ . | markdownify }}</p>
     {{ end }}
     {{ partialCached "social-icons.html" . }}
   </hgroup>
