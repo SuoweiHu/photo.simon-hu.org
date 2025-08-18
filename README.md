@@ -3,20 +3,28 @@
 Before commencing install the hugo binaries:
 
 ```
-brew install hugo           #MAC
-choco install hugo-extended #WINDOWS
+brew install hugo            #MAC
+choco install hugo-extended  #WINDOWS
 ```
 
 To build a minified version of website, please run: 
 
 ```
-hugo --gc --minify
+hugo --gc --minify --printMemoryUsage --logLevel info
+# --minify            :  minify any supported output format (HTML, XML etc.)
+# --gc                :  enable to run some cleanup tasks (remove unused cache files) after the build
+# --printMemoryUsage  :  print memory usage to screen at intervals (so that you know it is not stuck)
+# --logLevel info     :  log level (debug|info|warn|error)
 ```
 
 To start a local server to preview the images: 
 
 ```
-hugo server 
+hugo server --gc --minify --disableFastRender --watch true
+# --minify            :  minify any supported output format (HTML, XML etc.)
+# --gc                :  enable to run some cleanup tasks (remove unused cache files) after the build
+# --disableFastRender :  full rebuilds on change
+# --watch true        :  watch for filesystem for changes and recreate as needed
 ```
 
 
