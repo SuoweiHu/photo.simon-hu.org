@@ -70,6 +70,14 @@ header > a:first-of-type{
     margin-left: 0rem;
     padding-left: 0.5rem;
 }
+@media (min-width: 640px) {
+    hgroup {
+        margin-bottom: 2rem;
+    }
+    main>section{
+        margin-bottom: 2rem;
+    }
+}
 body>header{
     margin-bottom: calc(2rem - 1px)
 }
