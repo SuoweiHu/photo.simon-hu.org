@@ -54,6 +54,12 @@ body {
     word-break: break-word;
 }
 
+/* Set title font */
+.front-page hgroup h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
 /* ====================================== */
 /* Header & Footer related style */
 header {
