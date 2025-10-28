@@ -196,3 +196,33 @@ a[title="Linkedin"] > svg, a[title="LinkedIn"] > svg{
 html:not(.front-page) section.social-icons{
     display: none;
 }
+
+
+/* ====================================== */
+/* Align main page padding with blog site */
+
+body{
+    --gap:24px;  /* 1rem is the default, changed to 24px to match */
+}
+body>header{
+    padding-inline: var( --gap);
+}
+
+body>header>a.btn:first-of-type{
+    padding-left: 0px !important;
+}
+
+body>main>hgroup{
+    padding-inline: var( --gap);
+}
+body>main>section{
+    padding-left:  var( --gap);
+    padding-right: var( --gap);
+}
+body>main>section.featured{
+    padding-left:  var( --gap);
+    padding-right: var( --gap);
+}
+
+/* ====================================== */
+
