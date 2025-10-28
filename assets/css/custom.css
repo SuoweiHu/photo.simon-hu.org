@@ -106,7 +106,11 @@ header ul#menu li a{
     }
 }
 
-header ul#menu li a[title="Blog"]{
+header ul#menu li a[title="Blog"],
+header ul#menu li a[title="Blog (Local Debug)"],
+header ul#menu li a[title="Blog Local"],
+header ul#menu li a[title="Blog Debug"]
+{
 	background: #1E1E1E;
 	padding-block: 5px;
 	transform: translate(0px, -5px);
@@ -203,9 +207,15 @@ html:not(.front-page) section.social-icons{
 /* ====================================== */
 /* Align main page padding with blog site */
 
-body{
+:root{
     --gap:24px;  /* 1rem is the default, changed to 24px to match */
-    --main-width: 1238px; /* Both variable wasn't a part of the original code */
+    --main-width: 1238px; /* variable wasn't a part of the original code */
+    --header-height: 64px; /*  variable wasn't a part of the original code */
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --gap: 14px;
+    }
 }
 body>header{
     padding-inline: var(--gap);
@@ -237,9 +247,30 @@ body>header ul#menu li:last-of-type{
     position: relative;
     a{
         /* ↓ to align with blog site's photo button*/
-        padding-inline: 17px;
+        padding-inline: 18px;
     }
 }
+body>main>hgroup{
+    margin-top: 1px;
+}
+
+body > header {
+    flex-wrap: wrap;
+}
+body > header > ul#menu {
+    flex-wrap: wrap;
+    align-items: center;
+}
+@media (max-width: 767px){
+    .front-page hgroup h1{
+        font-size: 1.875rem;
+    }
+    .front-page header{
+        margin-bottom: 16px;
+        border: 2px solid #ffcf00 !important;
+    }
+}
+
 
 /* ====================================== */
 /* Align scroll bar (exclude it from the page width) */
