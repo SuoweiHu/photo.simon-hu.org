@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "Hugo Server (start/up/run/clear)",
+            "type": "shell",
+            "command": "hugo server --disableFastRender --port 7853",
+            "group": "none",
+            "hide": false,
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "presentation":{
+                "echo": true,
+                "reveal": "silent",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        },
+        {
+            "label": "Open Browser",
+            "type": "shell",
+            "command": "open http://localhost:7853",
+            "group": "none",
+            "hide": false,
+            "problemMatcher": [],
+            "presentation":{
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "dedicated",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        }
+
+
+    ]
+}
