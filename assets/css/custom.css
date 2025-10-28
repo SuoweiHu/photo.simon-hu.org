@@ -198,14 +198,18 @@ html:not(.front-page) section.social-icons{
 }
 
 
+
+
 /* ====================================== */
 /* Align main page padding with blog site */
 
 body{
     --gap:24px;  /* 1rem is the default, changed to 24px to match */
+    --main-width: 1238px; /* Both variable wasn't a part of the original code */
 }
 body>header{
-    padding-inline: var( --gap);
+    padding-inline: var(--gap);
+    max-width: calc(var(--main-width) + var(--gap) * 2);
 }
 
 body>header>a.btn:first-of-type{
@@ -213,16 +217,59 @@ body>header>a.btn:first-of-type{
 }
 
 body>main>hgroup{
-    padding-inline: var( --gap);
+    padding-inline: var(--gap);
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    /* border: 1px solid #ffcf00 !important; */
 }
 body>main>section{
-    padding-left:  var( --gap);
-    padding-right: var( --gap);
+    padding-left:  var(--gap);
+    padding-right: var(--gap);
 }
 body>main>section.featured{
-    padding-left:  var( --gap);
-    padding-right: var( --gap);
+    padding-left:  var(--gap);
+    padding-right: var(--gap);
+}
+body>header ul#menu{
+    padding-right: 0px;
+}
+body>header ul#menu li:last-of-type{
+    margin-right: 0px;
+    position: relative;
+    a{
+        /* ↓ to align with blog site's photo button*/
+        padding-inline: 17px;
+    }
 }
 
 /* ====================================== */
+/* Align scroll bar (exclude it from the page width) */
 
+/* from zmedia */
+@media screen and (min-width: 768px) {
+    /* reset */
+    ::-webkit-scrollbar {
+        width: 19px;
+        height: 11px;
+    }
+}
+
+/* ====================================== */
+/* Social icon size */
+section.social-icons > a[title="LinkedIn"] > svg{
+    height: 22px;
+    width: 22px;
+    transform: translate(2px,1px)
+}
+section.social-icons > a[title="GitHub"] > svg{
+    height: 24px;
+    width: 24px;
+    scale: 1.1;
+    transform: translate(-1px,0px)
+}
+section.social-icons > a[title="E-Mail"] > svg,
+section.social-icons > a[title="Mail"] > svg{
+    height: 24px;
+    width: 24px;
+    scale: 1.1;
+    transform: translate(-3px,0px)
+}
