@@ -267,7 +267,7 @@ body > header > ul#menu {
     }
     .front-page header{
         margin-bottom: 16px;
-        border: 2px solid #ffcf00 !important;
+        /* border: 2px solid #ffcf00 !important; */
     }
 }
 
