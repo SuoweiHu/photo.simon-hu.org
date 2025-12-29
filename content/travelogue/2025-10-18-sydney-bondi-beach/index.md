@@ -1,7 +1,7 @@
 ---
 title: "Sydney, Bondi Beach"
 date: 2025-10-18
-description: "N/A"
+description: "[2025-10-18] N/A"
 resources:
   - src: _SH_9424.jpg
     params:
