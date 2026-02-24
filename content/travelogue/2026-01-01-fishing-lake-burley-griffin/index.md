@@ -6,4 +6,5 @@ resources:
   - src: _SH_9822.jpg
     params:
       cover: true
+draft: true
 ---

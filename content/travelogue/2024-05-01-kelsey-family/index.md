@@ -5,5 +5,6 @@ resources:
   - src: kelsey-family-31.jpeg
     params:
       cover: true
+draft: true
 ---
 

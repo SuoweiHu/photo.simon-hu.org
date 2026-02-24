@@ -6,4 +6,5 @@ resources:
   - src: 2025-12-30T110645.jpeg
     params:
       cover: true
+draft: true
 ---
