@@ -1,5 +1,5 @@
 ---
-title: "Keysey Graduation Ceremoney - Part1"
+title: "Kelsey Graduation Ceremoney - Part1"
 date: 2026-01-30
 description: "Llewellyn Hall - ANU School of Music"
 resources:
